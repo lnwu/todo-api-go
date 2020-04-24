@@ -2,8 +2,6 @@ steps:
   - label: ":go: 编译"
     command: ./auto/build.sh
 
-  - wait
-
   - label: ":go: 测试"
     command: ./auto/test.sh
 
