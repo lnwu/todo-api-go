@@ -15,3 +15,10 @@ steps:
     command: ./auto/deploy.sh
     env:
       STAGE: staging
+
+  - block: ":rocket: 点击部署到线上环境"
+
+  - label: ":docker: 部署到线上环境"
+    command: "echo Test"
+    env:
+      STAGE: production
