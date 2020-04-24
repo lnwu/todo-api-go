@@ -14,7 +14,7 @@ func main() {
 	router := gin.Default()
 
 	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"https://lnwu.github.io/todo-api-go/"}
+	config.AllowOrigins = []string{"https://lnwu.github.io"}
 	router.Use(cors.New(config))
 
 	router.GET("/todos", func(c *gin.Context) {
