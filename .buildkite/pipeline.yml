@@ -4,6 +4,11 @@ steps:
 
   - wait
 
+  - label: ":go: 测试"
+    command: ./auto/test.sh
+
+  - wait
+
   - label: ":docker: 部署到开发测试环境"
     command: ./auto/deploy.sh
     env:
