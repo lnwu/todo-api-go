@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,10 +11,6 @@ type Todo struct {
 
 func main() {
 	router := gin.Default()
-
-	config := cors.DefaultConfig()
-	config.AllowOrigins = []string{"https://lnwu.github.io"}
-	router.Use(cors.New(config))
 
 	router.GET("/todos", func(c *gin.Context) {
 		todos := [2]Todo{{Title: "title1"}, {Title: "title2"}}
