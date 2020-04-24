@@ -41,14 +41,8 @@ paths:
             schema:
               $ref: "#/components/schemas/ToBeCreatedTodo"
       responses:
-        200:
+        201:
           description: "创建成功"
-          content:
-            application/json:
-              schema:
-                type: "array"
-                items:
-                  $ref: "#/components/schemas/Todo"
         400:
           description: "参数出错"
           content:
@@ -59,9 +53,9 @@ components:
   schemas:
     Todo:
       type: "object"
-      required: ["objectId", "title", "createdAt", "updatedAt"]
+      required: ["id", "title", "createdAt", "updatedAt"]
       properties:
-        objectId:
+        id:
           type: "string"
           description: "自动生成的uuid"
           example: "5e99c372ff54810009c61b3b"

@@ -1,28 +1,19 @@
 package main
 
 import (
+	"log"
+
 	"github.com/gin-gonic/gin"
+	"github.com/lnwu/todo-api-go/src/config"
+	"github.com/lnwu/todo-api-go/src/routes"
 )
 
-// Todo comment
-type Todo struct {
-	Title string `json:"title"`
-}
-
 func main() {
+	config.Connect()
+
 	router := gin.Default()
 
-	router.GET("/todos", func(c *gin.Context) {
-		todos := [2]Todo{{Title: "title1"}, {Title: "title2"}}
+	routes.Routes(router)
 
-		c.JSON(200, todos)
-	})
-
-	router.POST("/todos", func(c *gin.Context) {
-		newTodo := Todo{Title: "title"}
-		c.JSON(201, newTodo)
-	})
-
-	// listen and serve on 0.0.0.0:8080
-	router.Run()
+	log.Fatal(router.Run(":8080"))
 }
