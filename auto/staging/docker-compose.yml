@@ -1,6 +1,6 @@
 version: "3"
 services:
   stg-api:
-    image: "lnwu/todo-api-development:${BUILDKITE_BUILD_NUMBER}"
+    image: "lnwu/todo-api-staging:${BUILDKITE_BUILD_NUMBER}"
     ports:
       - "8081:8080"

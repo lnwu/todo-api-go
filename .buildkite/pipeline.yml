@@ -1,17 +1,17 @@
 steps:
-  - label: "编译"
+  - label: ":go: 编译"
     command: ./auto/build.sh
 
   - wait
 
-  - label: "部署到开发测试环境"
+  - label: ":docker: 部署到开发测试环境"
     command: ./auto/deploy.sh
     env:
       STAGE: development
 
   - block: ":rocket: 点击部署到公共测试环境"
 
-  - label: "部署到公共测试环境"
+  - label: ":docker: 部署到公共测试环境"
     command: ./auto/deploy.sh
     env:
       STAGE: staging
