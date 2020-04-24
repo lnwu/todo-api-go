@@ -50,10 +50,12 @@ func GetAllTodos(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{
-		"message": "所有待办事项",
-		"data":    todos,
-	})
+	// c.JSON(http.StatusOK, gin.H{
+	// 	"message": "所有待办事项",
+	// 	"data":    todos,
+	// })
+
+	c.JSON(http.StatusOK, todos)
 	return
 }
 

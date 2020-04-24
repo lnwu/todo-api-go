@@ -13,7 +13,7 @@ func Connect() *pg.DB {
 	opts := &pg.Options{
 		User:     "postgres",
 		Password: "password",
-		Addr:     "localhost:5432",
+		Addr:     "db:5432",
 		Database: "postgres",
 	}
 
