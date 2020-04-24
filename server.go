@@ -11,7 +11,7 @@ func main() {
 	r := gin.Default()
 
 	r.GET("/todos", func(c *gin.Context) {
-		todos := [1]Todo{{Title: "title1"}}
+		todos := [2]Todo{{Title: "title1"}, {Title: "title2"}}
 
 		c.JSON(200, todos)
 	})
