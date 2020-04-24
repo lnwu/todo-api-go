@@ -8,9 +8,9 @@ info:
     email: "wind2729@gmail.com"
 
 servers:
-  - url: https://bdixp21bc2.execute-api.ap-northeast-1.amazonaws.com/development
+  - url: http://185.201.227.30:8080
     description: Dev 环境
-  - url: https://w0ozi9d483.execute-api.ap-northeast-1.amazonaws.com/staging
+  - url: http://185.201.227.30:8081
     description: Stg 环境
 tags:
   - name: "todo"
