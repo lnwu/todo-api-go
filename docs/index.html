@@ -5,6 +5,10 @@
     <meta charset="UTF-8" />
     <title>Swagger UI</title>
     <link rel="stylesheet" type="text/css" href="./swagger-ui.css" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -52,11 +56,11 @@
           presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
           plugins: [SwaggerUIBundle.plugins.DownloadUrl],
           layout: "StandaloneLayout",
-        })
+        });
         // End Swagger UI call region
 
-        window.ui = ui
-      }
+        window.ui = ui;
+      };
     </script>
   </body>
 </html>
