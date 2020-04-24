@@ -1,0 +1,6 @@
+version: "3"
+services:
+  api:
+    image: "lnwu/todo-api"
+    ports:
+      - "8080:8080"
