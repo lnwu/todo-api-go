@@ -1,5 +1,7 @@
 # Todo-api-go
-Go lang demo for to do api
+Go lang demo for to do api  
+
+[![Build status](https://badge.buildkite.com/44b6e4f66fdac84720fb5b0161440b535511850fb31feecd01.svg)](https://buildkite.com/todo/hou-duan-bu-shu-liu-cheng)
 
 ### Tech stack
 
