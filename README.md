@@ -1,7 +1,7 @@
 # Todo-api-go
 Go lang demo for to do api
 
-### Teck stack
+### Tech stack
 
 Golang [https://golang.org/](https://golang.org/)  
 Gin [https://gin-gonic.com/](https://gin-gonic.com/)  
