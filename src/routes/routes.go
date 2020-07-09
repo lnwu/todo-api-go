@@ -8,7 +8,7 @@ import (
 )
 
 func Routes(router *gin.Engine) {
-	router.GET("/", welcome)
+	router.Any("/", welcome)
 	router.GET("/todos", controller.GetAllTodos)
 	router.POST("/todos", controller.CreateTodo)
 	router.DELETE("/todo/:todoId", controller.DeleteTodo)
