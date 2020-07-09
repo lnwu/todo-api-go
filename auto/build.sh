@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -euo pipefail
+set -eu
 
 TAG=ccr.ccs.tencentyun.com/k8-test/todo-api:${CI_BUILD_NUMBER}
 
